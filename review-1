@@ -1,0 +1,51 @@
+# Descripción del Producto
+
+## ¿Qué es mi producto y para qué sirve?
+
+Mi producto Task-List, es una aplicación de gestión de tareas que está diseñada para ayudar a organizar y realizar un seguimiento eficiente de las tareas diarias. Con una interfaz intuitiva y fácil de usar, Task-List simplifica la administración de las tareas que aun faltan, proporcionando una solución eficaz para la organización y planificación de las actividades.
+
+## Funcionalidades Clave
+
+1. Agregar Tareas:
+   - Permite a los usuarios agregar nuevas tareas fácilmente.
+   - Simplifica la entrada de información con un formulario amigable.
+
+2. Eliminar Tareas:
+   - Brinda la capacidad de eliminar tareas completadas o no deseadas.
+   - Facilita la limpieza y organización del listado de tareas.
+
+3. Editar Tareas:
+   - Permite la modificación de títulos y descripciones de tareas existentes.
+   - Proporciona flexibilidad para ajustar la información de las tareas según sea necesario.
+
+4.*Gestión de Estado de Tareas:
+   - Permite marcar tareas como completadas o pendientes.
+   - Proporciona una forma visual de identificar el progreso de las tareas.
+
+## Beneficios para el Usuario
+
+- Simplicidad y Facilidad de Uso:
+  - Diseño intuitivo que requiere poco o ningún aprendizaje.
+  - Facilita la administración de tareas sin complicaciones innecesarias.
+
+- Eficiencia en la Organización:
+  - Ayuda a los usuarios a mantenerse organizados y a evitar la sensación de abrumo.
+  - Facilita la priorización de tareas para mejorar la productividad.
+
+- Flexibilidad en la Gestión de Tareas:
+  - Posibilidad de editar y personalizar información de tareas según las necesidades cambiantes.
+  - Permite una adaptabilidad efectiva a diferentes flujos de trabajo.
+
+- Seguimiento Visual del Progreso:
+  - Proporciona una representación clara del estado de las tareas, mejorando la percepción del progreso.
+  - Ayuda a los usuarios a celebrar los logros y mantenerse motivados.
+
+
+Este producto se encuentra en constante mejora. En este sprint, hemos realizado avances significativos en dos áreas clave:
+
+1. Proyecto Integrador - Listado de Tareas:
+   - Hemos mejorado la funcionalidad del listado de tareas, permitiendo una experiencia más fluida para los usuarios.
+
+2. Implementación de Hooks:
+   - Hemos incorporado el uso de Hooks en la aplicación para mejorar la gestión del estado y la lógica del componente..
+
