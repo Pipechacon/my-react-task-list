@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './assets/Header';
 import TaskList from './assets/TaskList';
+import TaskForm from './TaskForm'; // Importa el nuevo componente
 
 const initialTasks = [
   { id: 1, name: 'Tarea 1', completed: false },
@@ -67,6 +68,7 @@ function App() {
   return (
     <div style={{ maxWidth: '600px', margin: 'auto', padding: '20px' }}>
       <Header addTask={addTask} />
+      <TaskForm addTask={addTask} /> {/* Agregado el nuevo componente */}
       <TaskList
         tasks={tasks}
         onToggleTask={handleToggleTask}
