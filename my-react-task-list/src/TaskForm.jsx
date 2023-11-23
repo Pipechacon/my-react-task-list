@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 
 const TaskForm = ({ addTask }) => {
-  const [taskName, setTaskName] = useState('');
-  const [taskDescription, setTaskDescription] = useState('');
+  const [task, setTask] = useState({ name: '', description: '' });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setTask((prevTask) => ({ ...prevTask, [name]: value }));
+  };
 
   const handleAddTask = () => {
-    // Validación antes de agregar la tarea
-    if (taskName.length >= 3) {
-      addTask({
-        name: taskName,
-        description: taskDescription,
-      });
-
-      // Limpiar los campos después de agregar la tarea
-      setTaskName('');
-      setTaskDescription('');
+    if (task.name.length >= 3) {
+      addTask(task);
+      setTask({ name: '', description: '' });
     } else {
       alert('El nombre de la tarea debe tener al menos 3 caracteres');
     }
@@ -28,8 +25,9 @@ const TaskForm = ({ addTask }) => {
           Nombre de la Tarea:
           <input
             type="text"
-            value={taskName}
-            onChange={(e) => setTaskName(e.target.value)}
+            name="name"
+            value={task.name}
+            onChange={handleInputChange}
           />
         </label>
         <br />
@@ -37,8 +35,9 @@ const TaskForm = ({ addTask }) => {
           Descripción de la Tarea:
           <input
             type="text"
-            value={taskDescription}
-            onChange={(e) => setTaskDescription(e.target.value)}
+            name="description"
+            value={task.description}
+            onChange={handleInputChange}
           />
         </label>
         <br />
